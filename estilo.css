@@ -1,0 +1,175 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Blanco semitransparente */
+  z-index: -1;
+}
+
+
+/* Encabezado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0; /* Reducido */
+  gap: 10px; /* Espacio entre elementos */
+}
+
+.titulo-principal {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  color: #00796b;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.avatar {
+  object-fit: cover;
+  margin-bottom: 0; /* Eliminado */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  color: #2a093f;
+}
+
+/* Sección: Mis herramientas favoritas */
+.herramientas {
+  background-color: rgba(227, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección: Mi futuro profesional */
+.futuro {
+  background-color: rgba(255, 227, 232, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección: Inspiración */
+.inspiracion {
+  background-color: rgba(255, 227, 232, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.herramientas img {
+  height: auto;
+  width: clamp(60px, 10vw, 100px); /* Escala proporcional al ancho de pantalla */
+  aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.herramientas img:hover {
+  transform: scale(1.15);
+}
+
+/* Secciones de texto */
+section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.692); /* Fondo blanco semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+  color: #2b0031;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.interaccion {
+  background-color: rgba(227, 255, 255, 0.85); 
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.interaccion:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Botones con íconos */
+.interaccion button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.interaccion button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Íconos dentro del botón */
+.interaccion button i {
+  font-size: 18px;
+}
+
+/* Cita inspiradora */
+blockquote {
+  font-style: italic;
+  color: #4e342e;
+  border-left: 5px solid #ff8a65;
+  padding-left: 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #fff3e0;
+  border-radius: 5px;
+}
