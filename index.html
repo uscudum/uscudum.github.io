@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,57 @@
             background-color: #f0f4f8;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        .btnUp {
+            width: 140px;
+            height: 60px;
+            background-color: #0096c7;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            border: 1px solid #fff;
+            box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.45);
+            -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.45);
+            -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.45);
+            transition: all 0.2s ease;
+        }
+
+        .btnUp:hover {
+            bottom: 25px;
+            cursor: pointer;
+            box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75);
+        }
+
         .hero {
             background: linear-gradient(to right, #00b4d8, #0077b6);
             color: white;
             padding: 60px 20px;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 2.8rem;
+            
         }
+
         .hero p {
             font-size: 1.1rem;
             max-width: 800px;
             margin: 0 auto;
         }
+
         .card-title {
             font-weight: bold;
         }
+
         .footer {
             background-color: #023047;
             color: white;
@@ -35,11 +70,13 @@
             padding: 20px 0;
             margin-top: 40px;
         }
+
         .card:hover {
             transform: scale(1.03);
             transition: 0.3s;
-            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
+
         .tags span {
             display: inline-block;
             font-size: 0.75rem;
@@ -48,21 +85,68 @@
             border-radius: 12px;
             color: white;
         }
-        .tag-html { background-color: #e34c26; }
-        .tag-css { background-color: #264de4; }
-        .tag-git { background-color: #f1502f; }
-        .tag-js { background-color: #f0db4f; color: #000; }
-        .tag-bootstrap { background-color: #563d7c; }
-        .tag-github { background-color: #333; }
-        .tag-python { background-color: #306998; }
-        .tag-flask { background-color: #000000; }
-        .tag-java { background-color: #b07219; }
-        .tag-poo { background-color: #028090; }
-        .tag-cpp { background-color: #00599c; }
-        .tag-algoritmos { background-color: #6a4c93; }
-        .tag-pages { background-color: #24292e; }
-        .tag-node { background-color: #3c873a; }
-        .tag-apis { background-color: #0096c7; }
+
+        .tag-html {
+            background-color: #e34c26;
+        }
+
+        .tag-css {
+            background-color: #264de4;
+        }
+
+        .tag-git {
+            background-color: #f1502f;
+        }
+
+        .tag-js {
+            background-color: #f0db4f;
+            color: #000;
+        }
+
+        .tag-bootstrap {
+            background-color: #563d7c;
+        }
+
+        .tag-github {
+            background-color: #333;
+        }
+
+        .tag-python {
+            background-color: #306998;
+        }
+
+        .tag-flask {
+            background-color: #000000;
+        }
+
+        .tag-java {
+            background-color: #b07219;
+        }
+
+        .tag-poo {
+            background-color: #028090;
+        }
+
+        .tag-cpp {
+            background-color: #00599c;
+        }
+
+        .tag-algoritmos {
+            background-color: #6a4c93;
+        }
+
+        .tag-pages {
+            background-color: #24292e;
+        }
+
+        .tag-node {
+            background-color: #3c873a;
+        }
+
+        .tag-apis {
+            background-color: #0096c7;
+        }
+
         .thumbnail-img {
             width: 100%;
             height: auto;
@@ -71,20 +155,26 @@
         }
     </style>
 </head>
+
 <body>
     <header class="hero">
+
         <h1>Proyecto Educativo con GitHub Pages</h1>
-<<<<<<< Updated upstream
-        <p>Este sitio fue creado con fines educativos para trabajar con Issues, ramas y colaboración en GitHub. Forma parte de la actividad para la Unidad Curricular <strong>Ingeniería de Software</strong> del <strong>Profesorado de Informática</strong> - <strong>CERP del Litoral</strong>.</p>
-        <br>
-        <a style="background-color: #00599c;" href="#" class ="btn btn-primary">Contacto</a>
-=======
+
+
+        <p>Este sitio fue creado con fines educativos para trabajar con Issues, ramas y colaboración en GitHub. Forma
+            parte de la actividad para la Unidad Curricular <strong>Ingeniería de Software</strong> del
+            <strong>Profesorado de Informática</strong> - <strong>CERP del Litoral</strong>.
+        </p>
+
+
+        
+        <img height="350px" src="imagenes/todos.jpeg" alt="unalindafoto">
+
         <p>"Los gustos no se van a pagar solos"</p>
         <p>"Se termino el recreo"</p>
-        <br>
+              <br>
         <a style="background-color: #00599c;" href="#" class="btn btn-primary">contacto</a>
->>>>>>> Stashed changes
-
     </header>
 
     <main class="container my-5">
@@ -92,12 +182,22 @@
             <!-- Card 1 -->
             <div class="col">
                 <div class="card h-100">
+
                     <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="Foto de Estudiante 1" class="img-thumbnail thumbnail-img">
+                    <img src="https://e0.pxfuel.com/wallpapers/547/969/desktop-wallpaper-kennen-league-of-legends-thumbnail.jpg"
+                        alt="Foto de Estudiante 1" class="img-thumbnail thumbnail-img">
+
+                    <img src="https://e0.pxfuel.com/wallpapers/547/969/desktop-wallpaper-kennen-league-of-legends-thumbnail.jpg"
+                        alt="Foto de Estudiante 1" class="img-thumbnail thumbnail-img">
+
+                    <img src="https://e0.pxfuel.com/wallpapers/547/969/desktop-wallpaper-kennen-league-of-legends-thumbnail.jpg" alt="Foto de Estudiante 1" class="img-thumbnail thumbnail-img">
+
                     <div class="card-body">
-                        <h5 class="card-title">Estudiante 1</h5>
+                        <h5 class="card-title">Bruno Guglielmone</h5>
                         <p class="card-text">Accedé al perfil y desarrollo del estudiante 1.</p>
                         <div class="tags mb-3">
-                            <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span class="tag-git">Git</span>
+                            <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span
+                                class="tag-git">Git</span>
                         </div>
                         <a href="estudiante1.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -106,12 +206,14 @@
             <!-- Card 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="Foto de Estudiante 2" class="img-thumbnail thumbnail-img">
+                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
+                        alt="Foto de Estudiante 2" class="img-thumbnail thumbnail-img">
                     <div class="card-body">
-                        <h5 class="card-title">Estudiante 2</h5>
+                        <h5 class="card-title">Wilton Mascarañas</h5>
                         <p class="card-text">Accedé al perfil y desarrollo del estudiante 2.</p>
                         <div class="tags mb-3">
-                            <span class="tag-js">JavaScript</span><span class="tag-bootstrap">Bootstrap</span><span class="tag-github">GitHub</span>
+                            <span class="tag-js">JavaScript</span><span class="tag-bootstrap">Bootstrap</span><span
+                                class="tag-github">GitHub</span>
                         </div>
                         <a href="estudiante2.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -120,12 +222,14 @@
             <!-- Card 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="Foto de Estudiante 3" class="img-thumbnail thumbnail-img">
+                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
+                        alt="Foto de Estudiante 3" class="img-thumbnail thumbnail-img">
                     <div class="card-body">
                         <h5 class="card-title">Pablo Filippini</h5>
                         <p class="card-text">Accedé al perfil y desarrollo de Pablo Filippini.</p>
                         <div class="tags mb-3">
-                            <span class="tag-python">Python</span><span class="tag-flask">Flask</span><span class="tag-git">Git</span>
+                            <span class="tag-python">Python</span><span class="tag-flask">Flask</span><span
+                                class="tag-git">Git</span>
                         </div>
                         <a href="estudiante3.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -134,12 +238,14 @@
             <!-- Card 4 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="Foto de Estudiante 4" class="img-thumbnail thumbnail-img">
+                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
+                        alt="Foto de Estudiante 4" class="img-thumbnail thumbnail-img">
                     <div class="card-body">
                         <h5 class="card-title">Estudiante 4</h5>
                         <p class="card-text">Accedé al perfil y desarrollo del estudiante 4.</p>
                         <div class="tags mb-3">
-                            <span class="tag-java">Java</span><span class="tag-poo">POO</span><span class="tag-git">Git</span>
+                            <span class="tag-java">Java</span><span class="tag-poo">POO</span><span
+                                class="tag-git">Git</span>
                         </div>
                         <a href="estudiante4.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -153,7 +259,8 @@
                         <h5 class="card-title">Luis M. Suarez</h5>
                         <p class="card-text">Accedé al perfil y desarrollo del Luis M. Suarez.</p>
                         <div class="tags mb-3">
-                            <span class="tag-cpp">React Js</span><span class="tag-algoritmos">Javascript</span><span class="tag-pages">Node Js</span>
+                            <span class="tag-cpp">React Js</span><span class="tag-algoritmos">Javascript</span><span
+                                class="tag-pages">Node Js</span>
                         </div>
                         <a href="estudiante5.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -162,12 +269,13 @@
             <!-- Card 6 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="Foto de Estudiante 6" class="img-thumbnail thumbnail-img">
+                    <img src="cora.png" alt="Foto de Estudiante 6" class="img-thumbnail thumbnail-img">
                     <div class="card-body">
-                        <h5 class="card-title">Estudiante 6</h5>
+                        <h5 class="card-title">Sheila M. Almirón</h5>
                         <p class="card-text">Accedé al perfil y desarrollo del estudiante 6.</p>
                         <div class="tags mb-3">
-                            <span class="tag-node">Node.js</span><span class="tag-apis">APIs</span><span class="tag-git">Git</span>
+                            <span class="tag-node">Node.js</span><span class="tag-apis">APIs</span><span
+                                class="tag-git">Git</span>
                         </div>
                         <a href="estudiante6.html" class="btn btn-primary">Ver perfil</a>
                     </div>
@@ -179,8 +287,17 @@
     <footer class="footer">
         <p>&copy; 2025 Proyecto Educativo | GitHub Pages</p>
     </footer>
-
+    <button class="btnUp" onclick="scrollToTop()">IR ARRIBA</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Opcional: desplazamiento suave
+            });
+        }
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
