@@ -25,9 +25,19 @@ Este proyecto está compuesto por 6 estudiantes. Cada uno cuenta con una tarjeta
 
 ---
 
+### Convenciones de commit (resumen)
+- `feat:` nueva funcionalidad
+- `fix:` corrección de bug
+- `docs:` cambios solo de documentación
+- `style:` formato (espacios, comas) sin cambiar lógica
+- `refactor:` cambio interno sin nuevas features ni fixes
+- `chore:` tareas varias (build, dependencias)
+
+---
+
 ## Tecnologías utilizadas
 
-- **HTML5 + CSS3**
+- **HTML5 + CSS3 + JavaScript**
 - **Bootstrap 5**
 - **Git / GitHub / GitHub Desktop**
 - **GitHub Pages** para la publicación
