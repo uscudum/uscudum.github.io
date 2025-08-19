@@ -200,7 +200,42 @@
             </button>
         </div>
     </main>
+    
+        <!-- Modal de Contacto -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+        <!-- Header -->
+        <div class="modal-header">
+            <h5 class="modal-title">Formulario de Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
 
+        <!-- Body con Formulario -->
+        <div class="modal-body">
+            <form id="formContacto">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
     <!-- Favicon animado -->
     <script>
         const totalFrames = 102;
@@ -268,6 +303,24 @@
             window.addEventListener('resize', setOrbitRadius);
         })();
     </script>
+    <script>
+    // Abrir modal al hacer click en el botón "contacto"
+    document.querySelector(".btn-contacto").addEventListener("click", function (e) {
+        e.preventDefault();
+        const modal = new bootstrap.Modal(document.getElementById("modalContacto"));
+        modal.show();
+    });
+
+    // Capturar submit del formulario
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Formulario enviado correctamente.");
+        const modal = bootstrap.Modal.getInstance(document.getElementById("modalContacto"));
+        modal.hide();
+        this.reset();
+    });
+    </script>
+
 </body>
 
 </html>
